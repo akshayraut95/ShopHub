@@ -15,9 +15,8 @@ public class Product {
     private Long id;
 
     private String name;
-    private String description;
     private double price;
-    private int qty;
+    private int stock;
 	public Long getId() {
 		return id;
 	}
@@ -30,23 +29,19 @@ public class Product {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getDescription() {
-		return description;
-	}
-	public void setDescription(String description) {
-		this.description = description;
-	}
 	public double getPrice() {
 		return price;
 	}
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	public int getQty() {
-		return qty;
+	public int getStock() {
+		return stock;
 	}
-	public void setQty(int qty) {
-		this.qty = qty;
+	public void setStock(int stock) {
+		this.stock = stock;
 	}
+
     
 }
+    
