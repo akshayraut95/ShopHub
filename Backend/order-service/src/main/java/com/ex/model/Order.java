@@ -5,16 +5,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Entity
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
 @Table(name = "orders")
 public class Order {
 
@@ -27,7 +19,6 @@ public class Order {
     private String orderNumber;
     private double totalPrice;
     private String status;
-    
 	public Long getId() {
 		return id;
 	}
@@ -46,6 +37,12 @@ public class Order {
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
+	public String getOrderNumber() {
+		return orderNumber;
+	}
+	public void setOrderNumber(String orderNumber) {
+		this.orderNumber = orderNumber;
+	}
 	public double getTotalPrice() {
 		return totalPrice;
 	}
@@ -58,12 +55,7 @@ public class Order {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getOrdernumber() {
-		return orderNumber;
-	}
-	public void setOrderNumber(String ordernumber) {
-		this.orderNumber = ordernumber;
-	}
-		
-	}
-	
+
+    // getters & setters
+    
+}
